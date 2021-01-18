@@ -14,6 +14,7 @@
 // простой и согласованный интерфейс для доступа к базам данных в PHP.
 
 require_once 'Singleton.php';
+require_once 'Database.php';
 
 $obj1 = Singleton::getInstance();
 echo $obj1->data;
@@ -22,3 +23,13 @@ echo '<br>';
 
 $obj2 = Singleton::getInstance();
 echo $obj2->data;
+
+
+
+//$obj3 = Database::getInstance();
+//echo $obj3::select();
+//
+//echo '<br>';
+
+//$obj4 = Database::getInstance();
+//echo $obj4->data;
